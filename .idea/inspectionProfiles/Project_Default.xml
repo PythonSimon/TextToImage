@@ -1,0 +1,14 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language isEnabled="false" name="Kotlin" />
+        <language isEnabled="false" name="Style Sheets" />
+        <language isEnabled="false" name="ActionScript" />
+        <language minSize="65" isEnabled="false" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+  </profile>
+</component>
