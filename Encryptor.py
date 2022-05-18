@@ -4,7 +4,7 @@ import PIL.Image as img
 from math import *
 from random import *
 
-with open("textSource.txt", encoding="utf8") as textFile:
+with open("TextSource.txt", encoding="utf8") as textFile:
     text = textFile.read()
 length = ceil(sqrt(len(text) + 1))
 
@@ -17,10 +17,10 @@ image.putpixel((0, 0), (randint(0, threshold), threshold, randint(threshold, 255
 for char in text:
     unicode = ord(char)
     if randint(0, 1) == 0:
-        color = (randint(0, (threshold - 1 if randint(1, 3) == 2 else 100)),
+        color = (randint(0, (threshold - 1 if randint(1, 4) == 2 else 100)),
                  (unicode & 0xFF00) >> 8, unicode & 0xFF)
     else:
-        color = (randint(threshold, (255 if randint(1, 3) == 2 else 228)),
+        color = (randint(threshold, (255 if randint(1, 4) == 2 else 228)),
                  (unicode & 0xFF), (unicode & 0xFF00) >> 8)
 
     image.putpixel((x, y), color)
